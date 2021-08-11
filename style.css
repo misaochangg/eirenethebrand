@@ -1,0 +1,219 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    background-color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+	word-wrap: break-word;
+	line-height: 150%;
+	-webkit-animation: lazyload 3s;
+	-moz-animation: lazyload 3s;
+	-o-animation: lazyload 3s;
+	animation: lazyload 3s;
+	letter-spacing: 0.2px;
+    scroll-behavior: smooth;
+}
+
+/* Links / Credit - https://tobiasahlin.com/blog/css-trick-animating-link-underline */
+a {
+    position: relative;
+    color: #444444;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555555;
+}
+
+/* Scrollbar - https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #FFFFFF; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #CCD5AE; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #CCD5AE; 
+}
+
+.landing {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navigation-area {
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-logo {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    overflow: hidden;
+}
+
+.navigation-image img {
+    width: 100px;
+}
+
+.navigation-title {
+    padding-left: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.navigation-links {
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+.navigation-links ul {
+    list-style-type: none;
+}
+
+.navigation-links li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.navigation-button {
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ccd5ae;
+    border-width: 3px;
+}
+
+.navigation-button:hover {
+    text-align: center;
+    background-color: #CCD5AE;
+    color: #FFFFFF;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 3px;
+}
+
+.navigation-button:hover a:hover {
+    color: #FFFFFF;
+    transform: none;
+}
+
+/* Header */
+#header-area {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    background-image: url('file:///Users/misaochang/Downloads/samantha-gades-BlIhVfXbi9s-unsplash.jpg');
+    background-size: 1500px;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+
+.header-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 43%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    white-space: pre-line;
+	line-height: 150%;
+}
+
+/* Services */
+#service-area {
+    width: 85%;
+    height: inherit;
+    margin: 50px auto;
+}
+
+.service-table {
+    width: 29%;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+    margin-right: 25px;
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+    width: auto;
+    overflow: hidden;
+}
+
+.service-icon {
+    background-color: #CCD5AE;
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 5px 0 0;
+}
+
+.service-title a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-desc {
+    width: 100%;
+    padding-top: 25px;
+}
+
+/* Scroll For More */
+#scroll-more {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+main {
+	top: 0;
+	left: 0;
+	width: 100%;
+}
